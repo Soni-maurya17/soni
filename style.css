@@ -12,24 +12,27 @@ body{
 }
 section{
     width: 100vw;
-    
-   
 }
 
 .particles-js {
     height: 100vh;
     width: 100%;
-    background: #efedf1;
+    
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 header{
     width: 100%;
-    /* height: 8vh; */
+    height: 8vh;
+    background: white;
+    box-shadow: 0px 2px 3px rgba(153, 151, 153, 0.6);
     
 }
 .logo{
-    font-size: 8vh;
+    font-size: 2rem;
+    font-weight: 600;
     width: 140px;
     padding-left: 7vh;
     
@@ -57,6 +60,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    transition: 0.2s;
 }
 
 nav ul li a.active-link::after{
@@ -67,7 +71,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #eadee1;
+    background: #d1a3ae;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -98,8 +102,8 @@ nav ul li a:hover::after{
 
 #about{
     padding: 80px 0;
-    color: #2c0909;
-    background: rgb(233, 208, 233);
+    color: #0c0303;
+    background:rgb(207, 192, 163);
 }
 .row{
     display: flex;
@@ -110,17 +114,54 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 .about-col-1 img{
-    width: 100%;
+    width: 70%;
     height: 70vh;
     border-radius: 15px;
+    margin-left: 60px;
+    box-shadow: 10px 10px 10px rgba(87, 86, 86, 0.6); ;
 }
 .about-col-2{
     flex-basis: 60%;
 }
 .about-sub-title{
-    font-size:60px;
+    font-size:40px;
     font-weight: 600;
     color: #160808;
+}
+.about-sub-title span{
+           color: #5e0823;
+}
+.about-sub-title i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.about-content p{
+    text-transform: lowercase;
+    font-size: 15px;
+   margin-right: 25px;
+}
+.about-col-2 Button  {
+    background-color: #3d0135;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px rgba(151, 59, 139, 0.6); ;
+    transition: background 0.5s,transform 0.5s;
+    
+}
+.about-col-2 Button a{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.about-col-2 Button:hover{
+background: #1d32a8;
+box-shadow: 4px 4px 4px rgba(43, 46, 209, 0.6);
+    transform: translateY(-5px);
+}
+.about-col-2 Button a:hover{
+    color: #070606;
 }
 
 
@@ -133,13 +174,17 @@ Width:100vw;
         
 }
 .sub-title-skill{
-    font-size:60px;
+    font-size:4 0px;
     font-weight: 600;
-    color:rgb(194, 188, 188);
+    color:rgb(207, 195, 23);
     justify-content: center;
     padding: 20px 0;
     padding-left: 45%;
     
+}
+.sub-title-skill i{
+    
+    color: white;
 }
 
 .container-fluid {
@@ -171,7 +216,7 @@ Position: center;
     align-items: center;
     margin: 2rem;
     border-radius: 40px;
-    transition: 0.5s ease;
+       transition: 0.5s ease;
     background-color: #070606;
     color: rgb(247, 244, 246);
     border: .2rem solid rgb(248, 238, 238);
@@ -180,7 +225,11 @@ Position: center;
 
 .skill-box i{
     font-size: 50px;
-    margin-bottom: 30px;
+    /* margin-bottom: 15px; */
+}
+.skill-box img{
+    height: 8vh;
+    width: 8vh;
 }
 
 /* education */
@@ -192,12 +241,19 @@ Position: center;
 
 .sub-title-education{
     text-align: center;
-    font-size:60px;
+    font-size:40px;
     font-weight: 600;
-    
+    color: #070331;
     justify-content: center;
     padding: 20px 0;
 
+}
+.sen{
+    color: #070606;
+    text-align: center;
+}
+.sub-title-education span{
+    color: rgb(221, 210, 59);
 }
 .education-container{
    display: flex;
@@ -208,24 +264,39 @@ Position: center;
 
 .education-box{
     background: #fcd0d0;
-    height: 70vh;
-    width: 30vw;
-    
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 30px ;
+    height: 60vh;
+    width: 25vw;
+    font-weight: 200;
+    border-radius: 10px ;
     justify-content: center;
     align-items: center;
     transition: background 0.5s,transform 0.5s;
+    box-shadow: 10px 10px 5px rgba(184, 182, 182, 0.6); ;
+   
+}
+.education-box h3{
+    padding-top: 8px;
+    padding-left: 8px;
+    font-size: 20px;
+}
+.education-box p{
+    padding-left: 8px;
+    color: #070606;
+}
+.education-box h5{
+    padding-left: 8px;
+    font-size: 15px;
+    color: rgb(3, 71, 3);
 }
 .education-box img{
-    height: 40vh;
-    width: 30vw;
-    border-radius: 30px;
+    height: 25vh;
+    width: 25vw;
+    border-radius: 5px;
+   
 }
 
 .education-box:hover{
-    background: #e45cd2;
+    background: #eeebee;
     transform: translateY(-10px);
 }
 
@@ -233,7 +304,7 @@ Position: center;
 /* contact */
 .contact-sub-title{
     color: #070606;
-    margin-top: 80px;
+    margin-top: 40px;
 
 }
 .contact-sub-title span{
@@ -268,13 +339,13 @@ Position: center;
     font-size: 30px;
     margin-right: 15px;
     color: #602c91;
-    background-color: rgb(17, 16, 16);
-    border-radius: 100%;
+    background-color: rgb(245, 243, 243);
+    border-radius: 80%;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #db88f0;
+    color: #420b4e;
     transform: translateY(-5px);
 }
 .btn.btn2{
@@ -285,13 +356,14 @@ Position: center;
 }
 
 .contact-card{
-    margin-top: 40px;
+    /* margin-top: 20px; */
     background: whitesmoke;
-    height: 75vh;
+    height: 80vh;
     width: 70vh;
     padding: 20px 20px;
     border-radius: 30px;
     box-shadow: 30px 30px 10px rgba(184, 182, 182, 0.6);
+    
 }
 
 .contact-right form{
@@ -309,11 +381,20 @@ form input, form textarea{
     border-radius: 6px;
     border: solid black 0.5px;
 }
+.form-sub-title{
+    margin-top: 40px;
+    padding-left: 60px;
+    color: #070606;
+}
+.form-sub-title span{
+    color: #8d1078;
+}
 
 form .btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
+    
     cursor: pointer;
 }
 form .btn2 i{
@@ -341,30 +422,34 @@ nav ul i .fa{
 
 /* projects */
 .project{
-    padding: 50px 0;
+    padding: 10px 0;
+    background: #070331;
 }
 .project-sub-title{
     text-align: center;
-    color: #070606;
+    color: #f3ecec;
     text-align: center;
-    font-size:60px;
+    font-size:40px;
     font-weight: 600;
     
     justify-content: center;
     padding: 20px 0;
     margin-bottom: 30px;
 }
+.project-sub-title span{
+    color: rgb(179, 15, 110);
+}
 .project-container{
      display: flex;
      flex-direction: row;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
      color: #f7f5f5;
 }
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#fcfa99);
+    background: linear-gradient(rgba(0,0,0,0.6),#35011d);
     border-radius: 10px;
     position: absolute;
     left: 0%;
@@ -382,23 +467,43 @@ nav ul i .fa{
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
+    color: rgb(214, 184, 15);
 }
 .layer a{
-    margin-top: 20px;
+        margin-top: 2px;
     color: #ff004f;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
+    font-size: 12px;
+    line-height: 30px;
     background: white;
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     text-align: center;
+    
+}
+.layer button{
+    width: 25vh;
+    border-radius: 9px;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+
+}
+.layer button p{
+    padding-top: 20px;
+    padding-left: 4px;
+}
+.layer button:hover{
+    background: rgb(214, 200, 7);
 }
 
 .project-box img{
     height: 50vh;
-    width: 30vw;
+    width: 25vw;
     border-radius: 30px;
     border: solid black 2px;
     display: block;
@@ -407,9 +512,9 @@ nav ul i .fa{
 }
 
 .project-box{
-    background: #fcd0d0;
+   
     height: 50vh;
-    width: 30vw;
+    width: 25vw;
     position: relative;
     overflow: hidden;
     
@@ -431,16 +536,17 @@ nav ul i .fa{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid black;
+    border: 1px solid rgb(163, 89, 89);
     padding: 14px  50px;
     border-radius: 6px;
     text-decoration: none;
     transition: background 0.5s;
-    
+    color: white;
 
 }
 .btn:hover{
-    background: rgb(145, 145, 245);
+    background: rgb(239, 202, 248);
+    color: #070606;
 
 }
 
