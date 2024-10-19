@@ -60,7 +60,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
-    transition: 0.2s;
+    
 }
 
 nav ul li a.active-link::after{
@@ -85,7 +85,7 @@ nav ul li a:hover::after{
 
 .home-text{
     margin-top: 20%;
-    font-size: 30px;
+    margin-left: 20vh;
     position: absolute;
 }
 .home-text h1{
@@ -96,6 +96,37 @@ nav ul li a:hover::after{
     color: #5e0823;
     transition: 0.5s;
 
+}
+ .social-links a{
+    justify-content: space-evenly;
+    padding-right: 5px;
+    font-size: 25px;
+    color: #420b4e;
+}
+.social-links a:hover{
+    color: #1d32a8;
+}
+.home-text button{
+    height: 5vh;
+    width: 20vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #1d32a8;
+    box-shadow: 2px 2px 4px rgba(43, 46, 209, 0.6);
+    margin-bottom: 10px;
+
+}
+.home .multiple-text{
+    color: #3d0135;
+}
+.home-text button a{
+    text-decoration: none;
+    color: white;
+}
+.home-text button:hover{
+    background-color: rgb(236, 182, 82);
+    
 }
 
 /* about */
@@ -205,6 +236,7 @@ Width:100vw;
     align-items: center;
     width: 80vw;
 Position: center;
+
 }
 
 .skill-box {
