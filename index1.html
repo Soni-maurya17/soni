@@ -17,7 +17,7 @@
             crossorigin="anonymous"
         />
         
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stle.css">
         <!-- font-awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <!-- favicon -->
@@ -31,37 +31,64 @@
             <!-- place navbar here -->
              
 
-                <nav>
-                    <div class="logo">soni</div>
-                    <ul id="sidemenu">
-                        <li> <a class="active" href="#home">Home</a></li>
-                        <li> <a href="#about">About</a></li>
-                        <li> <a href="#skill">Skills</a></li>
-                        <li> <a href="#education">Education</a></li>
-                        <li> <a href="#project">Projects</a></li>
-                        <li> <a href="#contact">Contact us</a></li>
-                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            <nav
+            class="navbar navbar-expand-sm navbar-light bg-light"
+        >
+            <div class="container">
+                <a class="navbar-brand fs-2 fw-3" href="#">Navbar</a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active ms-4 fs-4" href="#" aria-current="page"
+                                >Home
+                                <span class="visually-hidden">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item ms-4 fs-4">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item ms-4 fs-4">
+                            <a class="nav-link" href="#">skill</a>
+                        </li>
+                        <li class="nav-item ms-4 fs-4">
+                            <a class="nav-link" href="#">education</a>
+                        </li>
+                        <li class="nav-item ms-4 fs-4">
+                            <a class="nav-link" href="#">project</a>
+                        </li>
+                        <li class="nav-item ms-4 fs-4">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                        
                     </ul>
-
-                
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                
-                </nav>
+                   
+                </div>
+            </div>
+        </nav>
+        
              
                 </header>
-                <main>
             <!-- home -->
                   <section >
                 <div class="home" id="home" >
                     <div class="home-container">
                     <div class="particles-js">
-                        <div class="home-row">
-                            <div class="home-col-1">
                     <div class="home-text">
                     <h1>Hi there, I'm <span>Soni Maurya</span> <br>  from Lucknow
-                    <h3>i'm into <span class="multiple-text"> web designing</span></h3>
+                    <h3>i'm into <span class="multiple-text"></span></h3>
                     
-                    <button><a href="#about">about me <i class="fa-solid fa-arrow-down"></i></a></button>
+                    <button><a href="">about me <i class="fa-solid fa-arrow-down"></i></a></button>
                     <div class="social-links">
                         <a href="https://wa.me/qr/OK7CZHCV2DGVD1"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.linkedin.com/in/soni-maurya-3803a122b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
@@ -69,13 +96,9 @@
                         <a href="https://x.com/SoniMau43358364?t=Dybf6npF9bJI5rtbzw_n9w&s=08"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-telegram"></i></a>
                     </div>
-                </div>
-                            </div>
-                <div class="home-col-2">
                         <div class="home-image">
-                            <img src="home2.png" draggable="false" class="tilt" alt="">
+                            <img src="" draggable="false" class="tilt" alt="">
                         </div>
-                            </div>  
                     </div>
                     </div>
                 </div>
@@ -167,35 +190,30 @@
                     <div class="education-container" >
                         <div class="education-box">
                            <img src="pic1.jpeg" alt="">
-                           <div class="content">
                             <h3>Bachelors of technology in computer science and engineering</h3>
                             <p>school of management sciences |AKTU</p>
                             <h5>2021-2025 | pursuing</h5>
-                           </div>
                         </div>
                     
                         <div class="education-box">
                             <img src="pic2.jpeg" alt="">
-                            <div class="content">
                             <h3>Intermediate in PCM (ISC Board)</h3>
-                            <p>new public college <br>
-                            deputy ganj, neelmatha lucknow.</p>
+                            <p>new public college </p>
+                            <p>deputy ganj, neelmatha lucknow.</p>
                             <h5>2019-2021 | completed | secured 86.5%</h5>
-                            </div>
+                            
                         </div>
                     
                         <div class="education-box">
                             <img src="pic2.jpeg" alt="">
-                            <div class="content">
                             <h3>High School (ICSE Board)</h3>
-                            <p>new public college <br>
-                            deputy ganj, neelmatha lucknow.</p>
+                            <p>new public college </p>
+                            <p>deputy ganj, neelmatha lucknow.</p>
                             <h5>2017-2019 | completed | secured 80%</h5>
                         </div>
-                        </div>
-                        </div>
+                    
                     </div>
-                        
+                        </div>
 
                 </div>
             </div>
@@ -250,20 +268,6 @@
                     <div class="contact-container">
                         <div class="row">
                             <div class="contact-left">
-                                <h1 class="form-sub-title"><i class="fa-solid fa-headset"></i> get in <span> touch </span></h1>
-                                <div class="contact-card">
-                                <form action="" method="post" name="submit-to-google-sheet" > 
-                                    <input type="text" name="name" placeholder="your name" required ></i>
-                                    <input type="email" name="EMAIL"  placeholder="your email" required  ></i>
-                                    <textarea name="message" rows="6" placeholder="your message"></textarea>
-                                    <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i>Submit</button>
-                                </form>
-                                <span id="msg">
-
-                                </span>
-                                </div>
-                            </div>
-                            <div class="contact-right">
                                 <h1 class="contact-sub-title">Contact <span> Me </span></h1>
                                 <p><i class="fa-solid fa-envelope"></i>sonimaura1711@gmail.com</p>
                                 <p><i class="fa-solid fa-phone"></i>XXX-XXX-XXXX</p>
@@ -279,7 +283,17 @@
                                 </div>
                                 
                             </div>
-                            
+                            <div class="contact-right">
+                                <h1 class="form-sub-title"><i class="fa-solid fa-headset"></i> get in <span> touch </span></h1>
+                                <div class="contact-card">
+                                <form action="" method="post"  > 
+                                    <input type="text" name="name" placeholder="your name" required ></i>
+                                    <input type="email" name="EMAIL"  placeholder="your email" required  ></i>
+                                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                                    <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i>Submit</button>
+                                </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="copyright">
                             <p>copyright made by <i class="fa-solid fa-heart"></i> @ Soni Maurya</p>
@@ -299,13 +313,6 @@
          <script type="text/javascript" src="app.js"></script>
          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
          </script>
-         <script src="src.js"></script>
-
-         <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyDZQadguLf6_Vek55aoa9p7D6LQdblS4-G_-73DxFK4yI1Vxv6bXEDCy7zDYWPtYOm/exec'
-            const form = document.forms['submit-to-google-sheet']
-           
-          </script>
         
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
