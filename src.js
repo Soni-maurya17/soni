@@ -1,3 +1,24 @@
+// $(document).ready(function () {
+//     $(window).scroll(function () {
+//        if($(window).scrollTop() > 300) {
+// $('i').css({
+//     "opacity":"1","pointer-events":"auto"
+// })
+//         };
+//         else{
+//             $('i').css({
+//                 "opacity":"1","pointer-events":"auto"
+//             });
+//         }
+//     });
+//     $('i').click(fuction(){
+//      $('html').animate({scrollTop:0},500)
+//     });
+// });
+    
+ 
+
+
 
 // multi text
 const typed = new Typed('.multiple-text', {
@@ -38,3 +59,4 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyDZQadguLf6_Vek55aoa
             function closemenu(){
                 sidemenu.style.right= "-200px";
             }
+            
