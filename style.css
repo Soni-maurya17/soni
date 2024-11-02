@@ -40,11 +40,12 @@ header{
     
 }
 .logo{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 600;
     width: 140px;
     padding-left: 7vh;
     padding-bottom: 5vh;
+    
     
 }
 
@@ -154,12 +155,12 @@ transition: 0.5s;
   }
   .home .content h2 {
     margin-left: 30px;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 800;
     color: #5e0f59;
   }
   .home .content h2 span {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 800;
     color: #e1b710;
   }
@@ -271,7 +272,7 @@ transition: 0.5s;
   /* social icons end */
   
   /* hero media queries starts*/
-  @media (max-width: 450px) {
+  @media (max-width: 800px) {
     .home .btn {
       margin: 4rem 0;
       margin-left: 2.5rem;
@@ -282,7 +283,7 @@ transition: 0.5s;
     .home .image img {
       margin-top: 2rem;
       margin-bottom: 3rem;
-      margin-left: 2.5rem;
+      margin-left: 5rem;
     }
     .home .content p {
       font-size: 2.2rem;
@@ -698,15 +699,20 @@ Position: center;
     display: flex;
     flex-direction: row;
     margin-bottom: 2px;
-
 }
+    .layer p{
+         color: wheat;
+    }
+
 .layer button p{
     padding-top: 20px;
     padding-left: 4px;
+    color: rgb(122, 122, 224);
 }
 .layer button:hover{
     background: rgb(214, 200, 7);
 }
+
 
 .project-box img{
     height: 50vh;
@@ -764,7 +770,7 @@ Position: center;
 }
 
 /* project media query */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     .project-container {
         flex-direction: column;
         width: 100%;
@@ -855,7 +861,7 @@ Position: center;
     width: 100%;
 }
 form input, form textarea{
-    width: 50vh;
+    width: 50vh; 
     border: 0;
     outline: none;
     background-color: #f3ffff;
@@ -976,6 +982,14 @@ nav .fa-solid{
      top: 25px;
      left: 25px;
      cursor: pointer;
+    }
+    .logo{
+        font-size: 4rem;
+        font-weight: 600;
+        width: 140px;
+        padding-left: 7vh;
+        padding-bottom: 10vh;
+        
     }
     
 
